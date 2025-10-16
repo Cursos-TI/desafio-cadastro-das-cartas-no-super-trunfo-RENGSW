@@ -1,8 +1,14 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - (Nível Mestre)
+// Desafio Super Trunfo - Países
+// Tema 1 - Cadastro das Cartas
+// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
+// Siga os comentários para implementar cada parte do desafio.
 
 int main() {
+    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
+    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    
     char estado1, estado2;
     char codigo1[4], codigo2[4];
     char cidade1[50], cidade2[50];
@@ -14,9 +20,11 @@ int main() {
     float pibPerCapita1, pibPerCapita2;
     float superPoder1, superPoder2;
 
-    // -----------------------------
-    // CADASTRO DA CARTA 1
-    // -----------------------------
+    // Cadastro das Cartas:
+    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
+    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+        
+    // CADASTRO DA CARTA 1:
     printf("Cadastre a Carta 1\n");
 
     printf("Digite uma letra de 'A' a 'H' para o Estado: ");
@@ -44,10 +52,8 @@ int main() {
     densidade1 = populacao1 / area1;
     pibPerCapita1 = (pib1 * 1000000000) / populacao1;
     superPoder1 = (float)populacao1 + area1 + pib1 + turistico1 + pibPerCapita1 + (1 / densidade1);
-
-    // -----------------------------
-    // CADASTRO DA CARTA 2
-    // -----------------------------
+    
+   // CADASTRO DA CARTA 2:
     printf("\nCadastre a Carta 2\n");
 
     printf("Digite uma letra de 'A' a 'H' para o Estado: ");
@@ -76,12 +82,14 @@ int main() {
     pibPerCapita2 = (pib2 * 1000000000) / populacao2;
     superPoder2 = (float)populacao2 + area2 + pib2 + turistico2 + pibPerCapita2 + (1 / densidade2);
 
-    // -----------------------------
-    // EXIBIÇÃO DAS CARTAS
-    // -----------------------------
-    printf("\n________________________________________\n");
+    printf("\n________________________________________\n");    
 
-    // Carta 1
+    // Exibição dos Dados das Cartas:
+    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
+    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    // EXIBIÇÃO DAS DUAS CARTAS:
+
+    // DADOS DA CARTA 1:    
     printf("Carta 1:\n");
     printf("Estado: %c\n", estado1);
     printf("Código: %s\n", codigo1);
@@ -95,8 +103,9 @@ int main() {
     printf("Super Poder: %.2f\n", superPoder1);
 
     printf("\n_______________________________________\n");
+    
 
-    // Carta 2
+     // DADOS DA CARTA 2:    
     printf("Carta 2:\n");
     printf("Estado: %c\n", estado2);
     printf("Código: %s\n", codigo2);
@@ -109,9 +118,8 @@ int main() {
     printf("PIB per Capita: %.2f reais\n", pibPerCapita2);
     printf("Super Poder: %.2f\n", superPoder2);
 
-    // -----------------------------
-    // COMPARAÇÃO DAS CARTAS
-    // -----------------------------
+    
+    // COMPARAÇÃO DAS CARTAS:
     printf("\n\nComparação de Cartas:\n");
 
     int resultado;
