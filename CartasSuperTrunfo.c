@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países (Nível Mestre)
+// Desafio Super Trunfo - (Nível Mestre)
 
 int main() {
     char estado1, estado2;
